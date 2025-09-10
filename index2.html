@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Group Network</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">StudentGroup</h1>
+
+            <!-- Hamburger Button -->
+            <div class="menu-toggle" id="menuToggle">
+                MENU
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- Popup Menu -->
+    <div id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <span id="closeMenu">&times;</span>
+        </div>
+        <ul class="side-menu-links">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="#" id="studentsBtn">Students</a></li>
+            <li><a href="group.html">Group</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+
+
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <h2 class="hero-title">Find Our Class Group Details</h2>
+            <div class="image-container">
+                <img src="IMG-20230325-WA0026.jpg" alt="Students collaborating" class="hero-image">
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h3 class="team-title">Meet Our Team</h3>
+        </section>
+    </main>
+
+    <!-- Students Selection Modal -->
+    <div id="studentsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="studentsModal">&times;</span>
+            <div class="modal-header">
+                <h2>Select a Student</h2>
+            </div>
+            <div class="modal-body">
+                <div class="students-grid">
+                    <div class="student-card" data-student="0">
+                        <div class="student-avatar">DSNT</div>
+                        <h3>DOKU SAMUEL NII TETTEH </h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="1">
+                        <div class="student-avatar">AS</div>
+                        <h3>AMPONSEM SANDRA</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="2">
+                        <div class="student-avatar">AP</div>
+                        <h3>ANOBENG PRINCE</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="3">
+                        <div class="student-avatar">BS</div>
+                        <h3>BOANOR SHEILA</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="4">
+                        <div class="student-avatar">AE</div>
+                        <h3>AMOH EMMANUEL</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="5">
+                        <div class="student-avatar">OAS</div>
+                        <h3>OSMAN ADELLA CELINE</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="6">
+                        <div class="student-avatar">NC</div>
+                        <h3>NAAWEMUO CLETUS</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="7">
+                        <div class="student-avatar">OBP</div>
+                        <h3>OFOIR BEMAH PRINCESS</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="8">
+                        <div class="student-avatar">AOE</div>
+                        <h3>ASANTE OBENG EMMANUEL</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                    <div class="student-card" data-student="9">
+                        <div class="student-avatar">OKE</div>
+                        <h3>OPOKU KWABIWAA ERICA</h3>
+                        <p>DEGREE - IT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Profile Modal -->
+    <div id="studentProfileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="studentProfileModal">&times;</span>
+            <div class="modal-header">
+                <h2>Student Profile</h2>
+            </div>
+            <div class="modal-body">
+                <div class="profile-info" id="profileInfo">
+                    <!-- Profile details will be populated by JavaScript -->
+                </div>
+
+                <!-- Map Container -->
+                <div id="mapContainer" class="map-container" style="display: none;">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
