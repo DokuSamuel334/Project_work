@@ -1,6 +1,6 @@
 /* Reset and Base Styles */
 @media screen and (max-width:  ){
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -533,4 +533,5 @@ body {
 
 .side-menu-links a:hover {
     color: #667eea;
+}
 }
